@@ -66,19 +66,20 @@ end
 
 #--------------------------------------------------------------
 
-#def turn(board)
+def turn(board)
 
-#puts "Please enter 1-9:"
-#user_input = gets
-#new_index = input_to_index(user_input)
+puts "Please enter 1-9:"
+user_input = gets
+new_index = input_to_index(user_input)
 
-#if valid_move?(board, new_index) == false
-#  turn(board)
-#end
+if valid_move?(board, new_index) == false
+  turn(board)
+end
 
-#move(board, new_index, "X")
-#display_board(board)
-#end
+move(board, new_index, "X")
+display_board(board)
+
+end
 
 #--------------------------------------------------------------
 
