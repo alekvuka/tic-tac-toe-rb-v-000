@@ -1,13 +1,22 @@
 
 #--------------------------------------------------------------
 
-#def play(board)
-#  i = 0
-#  while i < 9
-#    i +=1
-#    turn(board)
-#  end
-#end
+def play(board)
+
+until over?(board) == false
+  turn(board)
+end
+
+if draw?(board) == true
+  puts "The game has come to a draw!"
+elsif won?(board) == false
+  puts "No one won but thanks for playing"
+else won?(board) != false
+  winner = winner?(board)
+  puts "Congadulations #{winner}, you won!"
+end
+
+end 
 
 #--------------------------------------------------------------
 
