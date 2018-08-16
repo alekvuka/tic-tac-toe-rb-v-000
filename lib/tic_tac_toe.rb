@@ -12,9 +12,9 @@ if draw?(board) == true
 #elsif won?(board) == false
 #  puts "No one won but thanks for playing"
 elsif winner(board) == "X"
-  puts "Congratulations X"
+  puts "Congratulations X!"
 elsif winner(board) == "O"
-  puts "Congratulations O"
+  puts "Congratulations O!"
 else
   puts "Thanks for playing"
 end
