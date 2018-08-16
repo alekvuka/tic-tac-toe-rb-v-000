@@ -64,7 +64,7 @@ end
 
 #--------------------------------------------------------------
 
-def move(board, index, position = "X")
+def move(board, index, position)
   board[index] = position
 end
 
