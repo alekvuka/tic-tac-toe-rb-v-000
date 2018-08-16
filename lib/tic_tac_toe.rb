@@ -3,7 +3,7 @@
 
 def play(board)
 
-until over?(board) == false
+until over?(board) == true
   turn(board)
 end
 
@@ -16,7 +16,7 @@ else won?(board) != false
   puts "Congadulations #{winner}, you won!"
 end
 
-end 
+end
 
 #--------------------------------------------------------------
 
