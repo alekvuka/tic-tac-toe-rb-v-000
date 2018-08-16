@@ -4,6 +4,8 @@ require_relative '../lib/tic_tac_toe'
 
 board = Arrat.new(9, " ")
 
+puts "Welcome to tic tac toe!"
+
 display_board(board)
 
 play(board)
