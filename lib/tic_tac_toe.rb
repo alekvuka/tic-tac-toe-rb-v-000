@@ -33,12 +33,12 @@ end
 puts "What move would you like to make?"
 position = gets.strip
 
-until position == "X" || position == "O"
-  puts "What move would you like to make?"
-  position = gets.strip
-end
+#until position == "X" || position == "O"
+#  puts "What move would you like to make?"
+#  position = gets.strip
+#end
 
-move(board, new_index, position)
+move(board, new_index, "X")
 display_board(board)
 
 end
