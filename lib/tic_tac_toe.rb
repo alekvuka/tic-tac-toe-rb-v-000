@@ -9,8 +9,8 @@ end
 
 if draw?(board) == true
   puts "Cat's Game!"
-elsif won?(board) == false
-  puts "No one won but thanks for playing"
+#elsif won?(board) == false
+#  puts "No one won but thanks for playing"
 elsif winner(board) == "X"
   puts "Congratulations X"
 elsif winner(board) == "O"
