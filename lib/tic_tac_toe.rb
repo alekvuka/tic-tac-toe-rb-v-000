@@ -103,12 +103,6 @@ end
 
 #--------------------------------------------------------------
 
-def move(board, new_index, position = "X")
-  board[new_index] = position
-end
-
-#--------------------------------------------------------------
-
 def turn_count(board)
   turns = 0
   board.each do | xoro |
