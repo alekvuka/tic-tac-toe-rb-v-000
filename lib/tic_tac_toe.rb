@@ -104,7 +104,7 @@ end
 #--------------------------------------------------------------
 
 def move(board, new_index, position = "X")
-board[new_index] = position
+  board[new_index] = position
 end
 
 #--------------------------------------------------------------
