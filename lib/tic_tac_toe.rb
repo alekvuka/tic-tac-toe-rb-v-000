@@ -41,7 +41,7 @@ position = gets.strip
 #  position = gets.strip
 #end
 
-move(board, new_index, position)
+move(board, new_index, "X")
 display_board(board)
 
 end
