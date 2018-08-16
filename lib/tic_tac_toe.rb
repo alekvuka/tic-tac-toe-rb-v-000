@@ -12,7 +12,7 @@ if draw?(board) == true
 elsif won?(board) == false
   puts "No one won but thanks for playing"
 else won?(board) != false
-  winnr = winner?(board)
+  winnr = winner(board)
   puts "Congadulations #{winnr}, you won!"
 end
 
@@ -181,7 +181,6 @@ end
 #--------------------------------------------------------------
 
 def winner(board)
-  #winning_array = Array.new(3)
 
   if won?(board) == false
     return nil
