@@ -33,6 +33,11 @@ end
 puts "What move would you like to make?"
 position = gets
 
+until position == "X" || position == "O"
+  puts "What move would you like to make?"
+  position = gets
+end 
+
 move(board, new_index, position)
 display_board(board)
 
