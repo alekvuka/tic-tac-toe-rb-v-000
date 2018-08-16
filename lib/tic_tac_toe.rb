@@ -11,9 +11,12 @@ if draw?(board) == true
   puts "Cat's Game!"
 elsif won?(board) == false
   puts "No one won but thanks for playing"
-else won?(board) != false
-  winnr = winner(board)
-  puts "Congadulations #{winnr}, you won!"
+elsif winner(board) == "X"
+  puts "Congratulations X"
+elsif winner(board) == "O"
+  puts "Congratulations O"
+else
+  puts "Thanks for playing"
 end
 
 end
