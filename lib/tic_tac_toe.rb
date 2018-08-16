@@ -12,8 +12,8 @@ if draw?(board) == true
 elsif won?(board) == false
   puts "No one won but thanks for playing"
 else won?(board) != false
-  winner = winner?(board)
-  puts "Congadulations #{winner}, you won!"
+  winnr = winner?(board)
+  puts "Congadulations #{winnr}, you won!"
 end
 
 end
