@@ -30,8 +30,8 @@ if valid_move?(board, new_index) == false
   turn(board)
 end
 
-#puts "What move would you like to make?"
-#position = gets
+puts "What move would you like to make?"
+position = gets
 
 move(board, new_index, position)
 display_board(board)
