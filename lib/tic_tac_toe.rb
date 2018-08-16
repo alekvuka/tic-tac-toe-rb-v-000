@@ -20,6 +20,26 @@ end
 
 #--------------------------------------------------------------
 
+def turn(board)
+
+puts "Please enter 1-9:"
+user_input = gets
+new_index = input_to_index(user_input)
+
+if valid_move?(board, new_index) == false
+  turn(board)
+end
+
+puts "What move would you liek to make?"
+position = gets
+
+move(board, new_index, position)
+display_board(board)
+
+end
+
+#--------------------------------------------------------------
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -71,23 +91,6 @@ def position_taken?(board, index)
   else
     return false
   end
-end
-
-#--------------------------------------------------------------
-
-def turn(board)
-
-puts "Please enter 1-9:"
-user_input = gets
-new_index = input_to_index(user_input)
-
-if valid_move?(board, new_index) == false
-  turn(board)
-end
-
-move(board, new_index, "X")
-display_board(board)
-
 end
 
 #--------------------------------------------------------------
