@@ -8,7 +8,7 @@ until over?(board) == true
 end
 
 if draw?(board) == true
-  puts "The game has come to a draw!"
+  puts "Cat's Game!"
 elsif won?(board) == false
   puts "No one won but thanks for playing"
 else won?(board) != false
